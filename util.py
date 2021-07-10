@@ -3,6 +3,8 @@ from PIL import Image
 import pytesseract
 from summarizer import Summarizer
 
+model = Summarizer()
+
 def audio_to_string(audio_path):
 
     r = sr.Recognizer()
@@ -21,15 +23,12 @@ def text_to_string(path):
     
     return data
 
-def image_to_string(path):
-    image = Image.open(path)
-
-    data = pytesseract.image_to_string(image)
-    return data
-
 def summarize(text):
-
-    model = Summarizer()
+    global model
+    
     summarized_text = model(text, ratio=0.2)
 
     return summarized_text
+
+if __name__ == '__main__':
+    print('libraries imported')
