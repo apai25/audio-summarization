@@ -3,7 +3,7 @@ import sounddevice as sd
 import wavio
 
 fs = 44100  
-seconds = 5
+seconds = 20
 
 summary = ''
 while True:
@@ -16,4 +16,3 @@ while True:
 
     summary += summarize(audio_content)
     print(summary)
-    
