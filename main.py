@@ -12,7 +12,7 @@ while True:
     audio_path = 'audio.wav'
 
     wavio.write(audio_path, myrecording, fs, sampwidth=2)  
-    audio_content = audio_to_string(audio_path)
+    audio_content = audio_to_string(audio_path) + '.'
 
     summary += summarize(audio_content)
     print(summary)
