@@ -16,13 +16,6 @@ def audio_to_string(audio_path):
     text = r.recognize_google(audio)
     return text
 
-def text_to_string(path):
-
-    with open(path, 'r') as file:
-        data = file.read().replace('\n', '')
-    
-    return data
-
 def summarize(text):
     global model
     

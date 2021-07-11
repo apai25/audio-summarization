@@ -1,4 +1,4 @@
-from util import summarize, text_to_string, audio_to_string
+from util import summarize, audio_to_string
 import sounddevice as sd
 import wavio
 
@@ -15,4 +15,6 @@ while True:
     audio_content = audio_to_string(audio_path) + '.'
 
     summary += summarize(audio_content)
-    print(summary)
+
+    with open('summary.txt', 'w') as summary_file:
+        summary_file.write(summary)
