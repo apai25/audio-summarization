@@ -1,6 +1,5 @@
 import speech_recognition as sr
 from PIL import Image
-import pytesseract
 from summarizer import Summarizer
 
 model = Summarizer()
