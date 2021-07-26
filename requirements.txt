@@ -3,6 +3,7 @@ click==8.0.1
 joblib==1.0.1
 nltk==3.6.2
 numpy==1.21.1
+Pillow==8.3.1
 pycparser==2.20
 regex==2021.7.6
 sounddevice==0.4.2
