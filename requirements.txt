@@ -1,0 +1,12 @@
+cffi==1.14.6
+click==8.0.1
+joblib==1.0.1
+nltk==3.6.2
+numpy==1.21.1
+pycparser==2.20
+regex==2021.7.6
+sounddevice==0.4.2
+SpeechRecognition==3.8.1
+summarizer==0.0.7
+tqdm==4.61.2
+wavio==0.0.4
